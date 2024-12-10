@@ -1,0 +1,23 @@
+Fournir des descriptions alt pour les images :
+Car limite leur compréhension par les moteurs de recherche et leur accessibilité
+
+
+
+
+
+Structurer correctement les liens :
+Les liens doivent contenir du texte descriptif ou être accompagnés d'attributs comme aria-label pour améliorer leur lisibilité par les moteurs de recherche et les lecteurs d'écran
+
+
+
+
+
+Changer certain contrast de couleurs:
+Certaine partit du site possède des éléments différent possédant des couleurs qui se ressemble ce qui peut posé un problème pour les personnes avec des problème de vue et ce qui peut aussi entrainé un mauvais référencement du site
+
+
+
+
+Améliorer la vitesse de chargement des pages :
+Optimiser les images en réduisant leur taille ou en utilisant des formats moins lourd comme WebP
+Réduire les scripts inutilisés (par exemple, ceux signalés dans l'audit)
