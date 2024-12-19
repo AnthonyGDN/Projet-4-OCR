@@ -79,7 +79,7 @@ body {
 }
 .about-me__introduction {
 	font-family: 'Spectral';
-	font-weight: 800;
+	font-weight: 600;
 	font-style: italic;
 	width: 60%;
 }
@@ -119,7 +119,7 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #a1984f;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
@@ -314,7 +314,7 @@ body {
 }
 .picture.right::before {
 	content: ' ';
-	background-color: #a1984f;
+	background-color: #BEB45A;
 	width: 374px;
 	height: 329px;
 	position: absolute;
