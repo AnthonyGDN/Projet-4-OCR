@@ -314,7 +314,7 @@ body {
 }
 .picture.right::before {
 	content: ' ';
-	background-color: #BEB45A;
+	background-color: #a1984f;
 	width: 374px;
 	height: 329px;
 	position: absolute;
