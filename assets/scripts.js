@@ -93,6 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Create the image element inside the modal
     const modalImage = document.createElement("img");
     modalImage.className = "modal-image";
+    modalImage.alt = "Enlarged image";
     modalImageContainer.appendChild(modalImage);
 
     // Create navigation buttons for the modal (previous, next, close)
@@ -116,6 +117,10 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = (index + filteredItems.length) % filteredItems.length; // Handle circular navigation
         modalImage.src = filteredItems[currentIndex].src; // Set modal image source
         modal.style.display = "flex"; // Display the modal
+        
+        // Add text only when the modal is open
+        prevButton.textContent = "←";
+        nextButton.textContent = "→";
     };
 
     // Add click event listener to each gallery item to open the modal
@@ -141,11 +146,19 @@ document.addEventListener("DOMContentLoaded", () => {
     prevButton.addEventListener("click", prevImage);
 
     // Add event listener to close the modal
-    closeButton.addEventListener("click", () => modal.style.display = "none");
+    closeButton.addEventListener("click", () => {
+        modal.style.display = "none";
+        prevButton.textContent = "";
+        nextButton.textContent = "";
+    });
 
     // Close modal if the background (modal itself) is clicked
-    modal.addEventListener("click", (e) => {
-        if (e.target === modal) modal.style.display = "none";
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+        prevButton.textContent = "";
+        nextButton.textContent = "";
+    }
     });
 
     // Add keyboard support for modal navigation and closing
