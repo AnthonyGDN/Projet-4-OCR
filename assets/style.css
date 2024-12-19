@@ -94,11 +94,6 @@ body {
     border-right: 1px solid black;
 }
 
-.carousel-control-prev-icon,.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.75); 
-    border: 2px solid #ffffff; 
-    border-radius: 50%; 
-
 /* ============ Gallery Styles ============ */
 .gallery {
     grid-template-columns:  1fr 1fr 1fr; 
