@@ -95,7 +95,9 @@ body {
 }
 
 .carousel-control-prev-icon,.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75); 
+    border: 2px solid #ffffff; 
+    border-radius: 50%; 
 
 /* ============ Gallery Styles ============ */
 .gallery {
